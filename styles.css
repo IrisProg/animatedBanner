@@ -1,0 +1,186 @@
+@font-face {
+  font-family: "YS Text";
+  src: url("fonts/yandex-sans-text-regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes example {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0.5deg);
+  }
+  100% {
+    transform: rotate(-0.3deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1e1e1e;
+}
+
+.box {
+  margin: 0 auto;
+  position: relative;
+  width: 300px;
+  height: 600px;
+
+  background: #edf6ff;
+}
+
+.shelf {
+  position: absolute;
+  left: 14.7%;
+  right: 14.9%;
+  top: 4.7%;
+  bottom: 23.4%;
+}
+
+.products__hover {
+  cursor: grab;
+}
+
+.products:hover + .basket {
+  animation: example 1s infinite;
+}
+
+.products__hover :hover {
+  transition: transform 0.3s;
+  transform: scale(1.1);
+}
+
+.products__wine {
+  position: absolute;
+  left: 22%;
+  right: 65.7%;
+  top: 4.2%;
+  bottom: 75.2%;
+}
+
+.products__milk {
+  position: absolute;
+  left: 36%;
+  right: 51.7%;
+  top: 9.8%;
+  bottom: 75%;
+}
+
+.products__jam {
+  position: absolute;
+  left: 49%;
+  right: 35.7%;
+  top: 18%;
+  bottom: 75.1%;
+}
+
+.products__cheese {
+  position: absolute;
+  left: 67.3%;
+  right: 20.6%;
+  top: 19.5%;
+  bottom: 74.8%;
+}
+
+.products__meat {
+  position: absolute;
+  left: 17.2%;
+  right: 65.1%;
+  top: 32.5%;
+  bottom: 59.4%;
+}
+
+.products__chicken {
+  position: absolute;
+  left: 34%;
+  right: 43.5%;
+  top: 32.8%;
+  bottom: 58.8%;
+}
+
+.products__chips {
+  position: absolute;
+  left: 57.7%;
+  right: 16.9%;
+  top: 34%;
+  bottom: 58.2%;
+}
+
+.products__peanapple {
+  position: absolute;
+  left: 19%;
+  right: 69.3%;
+  top: 44.2%;
+  bottom: 43.5%;
+}
+
+.products__bananas {
+  position: absolute;
+  left: 34%;
+  right: 50.3%;
+  top: 48.8%;
+  bottom: 43.3%;
+}
+
+.products__apple {
+  position: absolute;
+  left: 53%;
+  right: 36.7%;
+  top: 50.7%;
+  bottom: 43.3%;
+}
+
+.products__green {
+  position: absolute;
+  left: 66.7%;
+  right: 12.8%;
+  top: 49.2%;
+  bottom: 42.3%;
+}
+
+.basket {
+  position: absolute;
+  width: 276px;
+  height: 100%;
+  left: calc(50% - 276px / 2);
+  top: 61.8%;
+  bottom: -10%;
+
+  transition: transform 1s;
+}
+
+.button {
+  position: absolute;
+  width: 174px;
+  height: 56px;
+  left: calc(50% - 174px / 2);
+  top: 524px;
+  cursor: pointer;
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 18px;
+
+  background: #fce000;
+  border-radius: 16px;
+
+  font-family: "YS Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #21201f;
+}
+
+.button:hover {
+  background: #f0d503;
+}
